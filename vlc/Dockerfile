@@ -12,4 +12,4 @@ EXPOSE 4212 8011
 USER aceproxy
 ENV VLC_PLUGIN_PATH /usr/lib/vlc/plugins/
 
-ENTRYPOINT ["/usr/bin/vlc"]
+CMD /usr/bin/vlc -I telnet --clock-jitter 0 --network-caching 2000 --sout-mux-caching 2000 --telnet-password admin --telnet-port 4212 --telnet-host 0.0.0.0

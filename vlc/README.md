@@ -1,1 +1,1 @@
-docker run  -d --restart always --name vlc-nox -p 4212:4212 -p 8011:8011 odayny/vlc-nox -I telnet --clock-jitter 0 --network-caching 2000 --sout-mux-caching 2000 --telnet-password admin --telnet-port 4212 --telnet-host 0.0.0.0
+docker run -d --restart always --name vlc-nox -p 4212:4212 -p 8011:8011 odayny/vlc-nox
